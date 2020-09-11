@@ -39,7 +39,7 @@ export const layout = ({
     disableContentMargin: false,
     footerRender: () => <Footer />,
     onPageChange: () => {
-      // 如果没有登录，重定向到 login
+      // 如果没有登录，重定向到 login 123
       if (!initialState?.currentUser?.userid && history.location.pathname !== '/user/login') {
         history.push('/user/login');
       }
